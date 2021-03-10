@@ -190,31 +190,90 @@ hr {
 .grid__item {
   border: 1px solid #333333;
 }
+
 /* Grid Section 3 Styles */
 .grid__item-3-1 {
   grid-area: g3-1;
+  height: 200px;
 }
 
 .grid__item-3-2 {
   grid-area: g3-2;
+  height: 290px;
 }
 
 .grid__item-3-3 {
   grid-area: g3-3;
+  height: 760px;
+}
+
+.grid__item-3-4 {
+  grid-area: g3-4;
+  height: 760px;
+}
+
+.grid__item-3-5 {
+  grid-area: g3-5;
+  height: 330px;
+}
+
+.grid__item-3-6 {
+  grid-area: g3-6;
+  height: 240px;
+}
+
+.grid__item-3-7 {
+  grid-area: g3-7;
+  height: 240px;
 }
 
 /* Set up the rest of the seven grid items. */
 
 .grid__section-3 {
-  display:  /* Fill this in. */ ;
-  grid-template-columns: /* Make two columns of equal widths. */ ;
-  grid-template-rows: /* Fill this in. */ ;
+  display:  grid ;
+  grid-template-columns: repeat(2, 1fr) ;
+  grid-template-rows: repeat(6, 1fr);
   grid-template-areas:
-   /* Fill in the appropriate grid areas here. */ ;
+   "g3-1 g3-1"
+   "g3-2 g3-2"
+   "g3-3 g3-4"
+   "g3-5 g3-5"
+   "g3-6 g3-6"
+   "g3-7 g3-7";
 }
 
-
 /* Remaining Section Styles */
+.grid__item-4-1 { grid-area: g4-1; }
+.grid__item-4-2 { grid-area: g4-2; }
+.grid__item-4-3 { grid-area: g4-3; }
+.grid__item-4-4 { grid-area: g4-4; }
+.grid__item-4-5 { grid-area: g4-5; }
+.grid__item-4-6 { grid-area: g4-6; }
+.grid__item-4-7 { grid-area: g4-7; }
+.grid__item-4-8 { grid-area: g4-8; }
+.grid__item-4-9 { grid-area: g4-9; }
+
+.grid__section-4 {
+  display: grid;
+  height: 590px;
+  grid-template-columns: repeat(5, 1fr) ;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+   "g4-1 g4-1 g4-2 g4-2 g4-5"
+   "g4-1 g4-1 g4-2 g4-2 g4-6"
+   "g4-1 g4-1 g4-3 g4-3 g4-7"
+   "g4-1 g4-1 g4-3 g4-3 g4-8"
+   "g4-1 g4-1 g4-4 g4-4 g4-9"
+   "g4-1 g4-1 g4-4 g4-4 .";
+}
+
+.grid__section-5 {
+
+}
+
+.grid__section-6 {
+
+}
 
 
 
