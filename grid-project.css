@@ -321,11 +321,42 @@ hr {
 .grid__section-8 {
   height: 360px;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-  "g7-1 g7-1 g7-2 g7-2 g7-4 g7-4 g7-4"
-  "g7-1 g7-1 g7-2 g7-2 g7-3 g7-3 g7-3";
+  "g8-1 g8-2 g8-3 g8-4 g8-5"
+  "g8-1 g8-2 g8-3 g8-4 g8-6"
+  "g8-1 g8-2 g8-3 g8-4 .";
+}
+
+.grid__section-9 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid__section-9 .grid__item {
+  height: 360px;
+  width: 19%;
+}
+
+.grid__item-10-1 { grid-area: g10-1; }
+.grid__item-10-2 { grid-area: g10-2; }
+.grid__item-10-3 { grid-area: g10-3; }
+.grid__item-10-4 { grid-area: g10-4; }
+.grid__item-10-5 { grid-area: g10-5; }
+.grid__item-10-6 { grid-area: g10-6; }
+.grid__item-10-7 { grid-area: g10-7; }
+
+
+.grid__section-10 {
+  height: 404px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) 213px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+  "g10-1 g10-2 g10-3 g10-4 g10-5 g10-6"
+  "g10-1 g10-2 g10-3 g10-4 g10-5 g10-6"
+  "g10-1 g10-2 g10-3 g10-4 g10-5 g10-7";
 }
 
 
